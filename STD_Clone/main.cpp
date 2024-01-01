@@ -1,19 +1,22 @@
 #include <array>
 #include <vector>
+#include <list>
 #include "Containers/array.h"
+#include "Containers/vector.h"
+#include "Containers/list.h"
+#include "MemoryPool.h"
 
 int main() {
-	std::vecot<int, 2> a = {
-		1, 2
-	};
-	alx::array_h<int, 2> b;
-	b[0] = 1;
-	b[1] = 2;
-	alx::array_h<int, 2> c;
-	c[0] = 3;
-	c[1] = 4;
+	alx::list<int> a;
+	std::list<int> b;
 
-	b = std::move(c);
+	a.push_back(0);
+	a.push_back(1);
+	a.push_back(2);
 
-	int o = 76;
+	b.push_back(0);
+	b.push_back(1);
+	b.push_back(2);
+
+	int fhd = 0;
 }
